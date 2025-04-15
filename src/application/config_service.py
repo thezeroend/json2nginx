@@ -13,7 +13,6 @@ def main(configs_dir, output_dir):
 
         for filename, config_data in configs_por_arquivo.items():
             result = generate_location_blocks(config_data)
-            print(result)
             output_filename = os.path.splitext(filename)[0] + ".conf"
             output_path = os.path.join(output_dir, output_filename)
 

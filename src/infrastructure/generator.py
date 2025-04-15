@@ -20,12 +20,6 @@ def generate_location_blocks(routes: List[Dict]):
 
         return config_content
 
-        # # Salva o arquivo de configuração no diretório de saída
-        # config_path = os.path.join(output_dir, config_filename)
-        # with open(config_path, 'w') as config_file:
-        #     config_file.write(config_content)
-        #     print(f"Configuração gerada para {route.get('path')}: {config_path}")
-
 def generate_config_content(route: Dict) -> str:
     modifier = route.get("modifier", "")
     path = route["path"]
