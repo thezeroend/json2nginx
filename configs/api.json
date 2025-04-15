@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "path": "/api",
+      "proxy_pass": "http://localhost:3000"
+    },
+    {
+      "path": "/api",
+      "proxy_pass": "http://localhost:3000",
+      "proxy_set_header": ["Host $host"]
+    }
+  ]
+}

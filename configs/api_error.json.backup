@@ -1,0 +1,21 @@
+{
+    "routes": [
+        {
+            "path": "/v1/",
+            "proxy_pass": "http://api.internal",
+            "proxy_set_header": [
+                {
+                    "name": "Host",
+                    "value": "$host"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "$http_authorization"
+                }
+            ],
+            "proxy_cache": "my_cache",
+            "proxy_cache_valid": "200 302 10m",
+            "proxy_intercept_errors": "on"
+        }
+    ]
+}

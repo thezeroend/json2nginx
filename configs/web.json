@@ -1,0 +1,10 @@
+{
+    "routes": [
+      {
+        "modifier": "~",
+        "path": "/web",
+        "proxy_pass": "http://localhost:31000"
+      }
+    ]
+  }
+  
