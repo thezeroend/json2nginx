@@ -67,5 +67,5 @@ Cada arquivo JSON gera um arquivo .conf separado com o nome baseado na rota (/ap
 
 A configuração Nginx gerada não inclui blocos server, listen, nem server_name.
 
-##🤝 Contribuições
+## 🤝 Contribuições
 Sinta-se à vontade para abrir issues, enviar PRs ou sugerir melhorias!
